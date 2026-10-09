@@ -1,0 +1,23 @@
+{
+  "name": "automationpractice",
+  "version": "1.0.0",
+  "description": "AutomationPractice",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaneshwari2601/AutomationPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dhaneshwari2601/AutomationPractice/issues"
+  },
+  "homepage": "https://github.com/dhaneshwari2601/AutomationPractice#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4"
+  }
+}
