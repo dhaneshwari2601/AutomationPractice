@@ -1,0 +1,670 @@
+- generic [ref=e2]:
+  - dialog [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]:
+        - text: We use cookies to improve your experience on our website. Read more in
+        - link "Privacy Policy" [ref=e6] [cursor=pointer]:
+          - /url: /privacy-policy#text
+        - text: .
+      - generic [ref=e7]:
+        - button "Manage cookies" [ref=e8] [cursor=pointer]: Manage
+        - button "Accept Cookies" [ref=e9] [cursor=pointer]: Accept cookies
+  - table [ref=e10]:
+    - rowgroup [ref=e11]:
+      - row [ref=e12]:
+        - cell [ref=e13]:
+          - generic [ref=e14]:
+            - navigation
+      - row [ref=e642]:
+        - cell [ref=e643]:
+          - generic [ref=e32]:
+            - generic [ref=e37]:
+              - generic [ref=e39]:
+                - heading "Free REST API for Testing & Prototyping" [level=1] [ref=e40]
+                - heading "Real REST API which is ready to handle your HTTP requests 24/7 for free. Can be used for your demo projects, testing, learning or even educating someone else" [level=6] [ref=e41]
+                - button [ref=e43] [cursor=pointer]
+                - generic [ref=e47]:
+                  - generic [ref=e48]: Public & Private Endpoints
+                  - generic [ref=e51]: Full CRUD Support
+                  - generic [ref=e54]: CORS Enabled
+              - generic [ref=e59]:
+                - generic [ref=e60]: "/objects/{id}"
+                - generic [ref=e66]:
+                  - generic [ref=e67]: GET https://api.restful-api.dev/objects/7
+                  - generic [ref=e68]: // 200 OK
+                  - generic [ref=e69]: "{"
+                  - generic [ref=e70]: "\"id\": \"7\","
+                  - generic [ref=e71]: "\"name\": \"Apple MacBook Pro 16\","
+                  - generic [ref=e72]: "\"data\": {"
+                  - generic [ref=e73]: "\"year\": 2019,"
+                  - generic [ref=e74]: "\"price\": 1849.99,"
+                  - generic [ref=e75]: "\"CPU model\": \"Intel Core i9\","
+                  - generic [ref=e76]: "\"Hard disk size\": \"1 TB\""
+                  - generic [ref=e77]: "}"
+                  - generic [ref=e78]: "}"
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - heading "Intro" [level=2] [ref=e81]
+                - heading "Welcome to our real REST API - a fully functional service backed by a real database. It lets you send, store, and retrieve data through real HTTP requests, providing an experience much like working with a production backend. Its flexible design allows you to create and manage custom data structures, making it easy to simulate realistic REST API behavior for any project." [level=6] [ref=e82]
+                - heading [level=6] [ref=e83]:
+                  - text: Whether you’re building demos, testing features, or waiting for backend updates, this API helps you generate and test responses as if everything were already live. It offers both
+                  - strong [ref=e84]: public
+                  - text: and
+                  - strong [ref=e85]: authenticated
+                  - text: access - the public version is open for quick exploration, while the more powerful authenticated version unlocks extra features, endpoints, and flexibility to shape your own data models and collections - perfect if you want to take things a bit further.
+              - generic [ref=e87]:
+                - generic [ref=e89]:
+                  - heading "Main HTTP Methods Support" [level=3] [ref=e93]
+                  - paragraph [ref=e94]: "Support all major HTTP methods: GET, POST, PUT, PATCH and DELETE."
+                - generic [ref=e96]:
+                  - heading "HTTPS Support" [level=3] [ref=e100]
+                  - paragraph [ref=e101]: Secure connections via SSL/TLS for all API endpoints.
+                - generic [ref=e103]:
+                  - heading "Cross-Origin Requests" [level=3] [ref=e107]
+                  - paragraph [ref=e108]: CORS enabled for all domains, perfect for frontend development.
+                - generic [ref=e110]:
+                  - heading "Flexible Resources Schema" [level=3] [ref=e114]
+                  - paragraph [ref=e115]: Design any data structures and relationships using nested JSON objects for complete flexibility.
+                - generic [ref=e117]:
+                  - heading "Overridable Status Codes" [level=3] [ref=e121]
+                  - paragraph [ref=e122]: Authenticated endpoints include an optional feature that lets you override the returned HTTP status code to simulate different responses.
+                - generic [ref=e124]:
+                  - heading "Always Available" [level=3] [ref=e128]
+                  - paragraph [ref=e129]: 99.9% uptime ensures reliable access for testing anytime, anywhere.
+            - link [ref=e131] [cursor=pointer]:
+              - /url: https://www.apidog.com/?utm_source=blogger&utm_medium=apidev
+              - img "API Dog" [ref=e132]
+            - generic [ref=e134]:
+              - heading "Available Endpoints" [level=2] [ref=e135]
+              - generic [ref=e136]:
+                - generic [ref=e137]:
+                  - heading "Show endpoints for:" [level=6] [ref=e138]
+                  - group [ref=e139]:
+                    - button "Authenticated" [ref=e140] [cursor=pointer]
+                    - button "Public" [pressed] [ref=e141] [cursor=pointer]
+                - list [ref=e142]:
+                  - listitem [ref=e143]:
+                    - generic [ref=e144]:
+                      - heading [level=3] [ref=e406]:
+                        - button "GET https://api.restful-api.dev/objects List of all objects" [expanded] [ref=e407] [cursor=pointer]:
+                          - generic [ref=e148]:
+                            - generic [ref=e149]:
+                              - generic [ref=e150]: GET
+                              - paragraph [ref=e152]: https://api.restful-api.dev/objects
+                            - paragraph [ref=e153]: List of all objects
+                      - region [ref=e423]:
+                        - generic [ref=e424]:
+                          - heading "Description" [level=6] [ref=e425]
+                          - paragraph [ref=e426]:
+                            - paragraph [ref=e427]: Retrieves a predefined set of sample objects from the public API. This endpoint provides a limited, reserved selection available for demonstration purposes - not all stored objects created by you or others. However, if you want to access multiple objects that you’ve created, you can use query parameters to retrieve specific objects by their IDs. Alternatively, you can sign up and use the authenticated API to access objects from your own collections in a more convenient and confidential manner
+                          - separator [ref=e428]
+                          - heading "Parameters" [level=6] [ref=e429]
+                          - generic [ref=e431]:
+                            - paragraph [ref=e432]:
+                              - text: •
+                              - strong [ref=e433]: id
+                              - text: string[] queryoptional
+                            - paragraph [ref=e434]:
+                              - paragraph [ref=e435]:
+                                - text: Optional query parameter for specifying one or more object IDs. When provided, the response includes only the specified objects and excludes all others. Supports multiple values by repeating the parameter in the query string (e.g.,
+                                - strong [ref=e436]: "?id=3&id=5&id=10"
+                                - text: )
+                          - separator [ref=e437]
+                          - heading "Response body example" [level=6] [ref=e438]
+                          - code [ref=e442]:
+                            - generic [ref=e443]: "1"
+                            - text: "["
+                            - generic [ref=e444]: "2"
+                            - text: "{"
+                            - generic [ref=e445]: "3"
+                            - text: "\"id\": \"1\","
+                            - generic [ref=e446]: "4"
+                            - text: "\"name\": \"Google Pixel 6 Pro\","
+                            - generic [ref=e447]: "5"
+                            - text: "\"data\": {"
+                            - generic [ref=e448]: "6"
+                            - text: "\"color\": \"Cloudy White\","
+                            - generic [ref=e449]: "7"
+                            - text: "\"capacity\": \"128 GB\""
+                            - generic [ref=e450]: "8"
+                            - text: "}"
+                            - generic [ref=e451]: "9"
+                            - text: "},"
+                            - generic [ref=e452]: "10"
+                            - text: "{"
+                            - generic [ref=e453]: "11"
+                            - text: "\"id\": \"2\","
+                            - generic [ref=e454]: "12"
+                            - text: "\"name\": \"Apple iPhone 12 Mini, 256GB, Blue\","
+                            - generic [ref=e455]: "13"
+                            - text: "\"data\": null"
+                            - generic [ref=e456]: "14"
+                            - text: "},"
+                            - generic [ref=e457]: "15"
+                            - text: "{"
+                            - generic [ref=e458]: "16"
+                            - text: "\"id\": \"3\","
+                            - generic [ref=e459]: "17"
+                            - text: "\"name\": \"Apple iPhone 12 Pro Max\","
+                            - generic [ref=e460]: "18"
+                            - text: "\"data\": {"
+                            - generic [ref=e461]: "19"
+                            - text: "\"color\": \"Cloudy White\","
+                            - generic [ref=e462]: "20"
+                            - text: "\"capacity GB\": 512"
+                            - generic [ref=e463]: "21"
+                            - text: "}"
+                            - generic [ref=e464]: "22"
+                            - text: "},"
+                            - generic [ref=e465]: "23"
+                            - text: "{"
+                            - generic [ref=e466]: "24"
+                            - text: "\"id\": \"4\","
+                            - generic [ref=e467]: "25"
+                            - text: "\"name\": \"Apple iPhone 11, 64GB\","
+                            - generic [ref=e468]: "26"
+                            - text: "\"data\": {"
+                            - generic [ref=e469]: "27"
+                            - text: "\"price\": 389.99,"
+                            - generic [ref=e470]: "28"
+                            - text: "\"color\": \"Purple\""
+                            - generic [ref=e471]: "29"
+                            - text: "}"
+                            - generic [ref=e472]: "30"
+                            - text: "},"
+                            - generic [ref=e473]: "31"
+                            - text: "{"
+                            - generic [ref=e474]: "32"
+                            - text: "\"id\": \"5\","
+                            - generic [ref=e475]: "33"
+                            - text: "\"name\": \"Samsung Galaxy Z Fold2\","
+                            - generic [ref=e476]: "34"
+                            - text: "\"data\": {"
+                            - generic [ref=e477]: "35"
+                            - text: "\"price\": 689.99,"
+                            - generic [ref=e478]: "36"
+                            - text: "\"color\": \"Brown\""
+                            - generic [ref=e479]: "37"
+                            - text: "}"
+                            - generic [ref=e480]: "38"
+                            - text: "},"
+                            - generic [ref=e481]: "39"
+                            - text: "{"
+                            - generic [ref=e482]: "40"
+                            - text: "\"id\": \"6\","
+                            - generic [ref=e483]: "41"
+                            - text: "\"name\": \"Apple AirPods\","
+                            - generic [ref=e484]: "42"
+                            - text: "\"data\": {"
+                            - generic [ref=e485]: "43"
+                            - text: "\"generation\": \"3rd\","
+                            - generic [ref=e486]: "44"
+                            - text: "\"price\": 120"
+                            - generic [ref=e487]: "45"
+                            - text: "}"
+                            - generic [ref=e488]: "46"
+                            - text: "},"
+                            - generic [ref=e489]: "47"
+                            - text: "{"
+                            - generic [ref=e490]: "48"
+                            - text: "\"id\": \"7\","
+                            - generic [ref=e491]: "49"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e492]: "50"
+                            - text: "\"data\": {"
+                            - generic [ref=e493]: "51"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e494]: "52"
+                            - text: "\"price\": 1849.99,"
+                            - generic [ref=e495]: "53"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e496]: "54"
+                            - text: "\"Hard disk size\": \"1 TB\""
+                            - generic [ref=e497]: "55"
+                            - text: "}"
+                            - generic [ref=e498]: "56"
+                            - text: "},"
+                            - generic [ref=e499]: "57"
+                            - text: "{"
+                            - generic [ref=e500]: "58"
+                            - text: "\"id\": \"8\","
+                            - generic [ref=e501]: "59"
+                            - text: "\"name\": \"Apple Watch Series 8\","
+                            - generic [ref=e502]: "60"
+                            - text: "\"data\": {"
+                            - generic [ref=e503]: "61"
+                            - text: "\"Strap Colour\": \"Elderberry\","
+                            - generic [ref=e504]: "62"
+                            - text: "\"Case Size\": \"41mm\""
+                            - generic [ref=e505]: "63"
+                            - text: "}"
+                            - generic [ref=e506]: "64"
+                            - text: "},"
+                            - generic [ref=e507]: "65"
+                            - text: "{"
+                            - generic [ref=e508]: "66"
+                            - text: "\"id\": \"9\","
+                            - generic [ref=e509]: "67"
+                            - text: "\"name\": \"Beats Studio3 Wireless\","
+                            - generic [ref=e510]: "68"
+                            - text: "\"data\": {"
+                            - generic [ref=e511]: "69"
+                            - text: "\"Color\": \"Red\","
+                            - generic [ref=e512]: "70"
+                            - text: "\"Description\": \"High-performance wireless noise cancelling headphones\""
+                            - generic [ref=e513]: "71"
+                            - text: "}"
+                            - generic [ref=e514]: "72"
+                            - text: "},"
+                            - generic [ref=e515]: "73"
+                            - text: "{"
+                            - generic [ref=e516]: "74"
+                            - text: "\"id\": \"10\","
+                            - generic [ref=e517]: "75"
+                            - text: "\"name\": \"Apple iPad Mini 5th Gen\","
+                            - generic [ref=e518]: "76"
+                            - text: "\"data\": {"
+                            - generic [ref=e519]: "77"
+                            - text: "\"Capacity\": \"64 GB\","
+                            - generic [ref=e520]: "78"
+                            - text: "\"Screen size\": 7.9"
+                            - generic [ref=e521]: "79"
+                            - text: "}"
+                            - generic [ref=e522]: "80"
+                            - text: "},"
+                            - generic [ref=e523]: "81"
+                            - text: "{"
+                            - generic [ref=e524]: "82"
+                            - text: "\"id\": \"11\","
+                            - generic [ref=e525]: "83"
+                            - text: "\"name\": \"Apple iPad Mini 5th Gen\","
+                            - generic [ref=e526]: "84"
+                            - text: "\"data\": {"
+                            - generic [ref=e527]: "85"
+                            - text: "\"Capacity\": \"254 GB\","
+                            - generic [ref=e528]: "86"
+                            - text: "\"Screen size\": 7.9"
+                            - generic [ref=e529]: "87"
+                            - text: "}"
+                            - generic [ref=e530]: "88"
+                            - text: "},"
+                            - generic [ref=e531]: "89"
+                            - text: "{"
+                            - generic [ref=e532]: "90"
+                            - text: "\"id\": \"12\","
+                            - generic [ref=e533]: "91"
+                            - text: "\"name\": \"Apple iPad Air\","
+                            - generic [ref=e534]: "92"
+                            - text: "\"data\": {"
+                            - generic [ref=e535]: "93"
+                            - text: "\"Generation\": \"4th\","
+                            - generic [ref=e536]: "94"
+                            - text: "\"Price\": \"419.99\","
+                            - generic [ref=e537]: "95"
+                            - text: "\"Capacity\": \"64 GB\""
+                            - generic [ref=e538]: "96"
+                            - text: "}"
+                            - generic [ref=e539]: "97"
+                            - text: "},"
+                            - generic [ref=e540]: "98"
+                            - text: "{"
+                            - generic [ref=e541]: "99"
+                            - text: "\"id\": \"13\","
+                            - generic [ref=e542]: "100"
+                            - text: "\"name\": \"Apple iPad Air\","
+                            - generic [ref=e543]: "101"
+                            - text: "\"data\": {"
+                            - generic [ref=e544]: "102"
+                            - text: "\"Generation\": \"4th\","
+                            - generic [ref=e545]: "103"
+                            - text: "\"Price\": \"519.99\","
+                            - generic [ref=e546]: "104"
+                            - text: "\"Capacity\": \"256 GB\""
+                            - generic [ref=e547]: "105"
+                            - text: "}"
+                            - generic [ref=e548]: "106"
+                            - text: "}"
+                            - generic [ref=e549]: "107"
+                            - text: "]"
+                  - listitem [ref=e157]:
+                    - generic [ref=e158]:
+                      - heading [level=3] [ref=e408]:
+                        - 'button "GET https://api.restful-api.dev/objects/{id} Single object" [expanded] [ref=e409] [cursor=pointer]':
+                          - generic [ref=e162]:
+                            - generic [ref=e163]:
+                              - generic [ref=e164]: GET
+                              - paragraph [ref=e166]: "https://api.restful-api.dev/objects/{id}"
+                            - paragraph [ref=e167]: Single object
+                      - region [ref=e555]:
+                        - generic [ref=e556]:
+                          - heading "Description" [level=6] [ref=e557]
+                          - paragraph [ref=e558]:
+                            - paragraph [ref=e559]: Retrieves detailed information for a single object specified by its unique ID.
+                          - separator [ref=e560]
+                          - heading "Parameters" [level=6] [ref=e561]
+                          - generic [ref=e563]:
+                            - paragraph [ref=e564]:
+                              - text: •
+                              - strong [ref=e565]: id
+                              - text: string pathrequired
+                            - paragraph [ref=e566]:
+                              - paragraph [ref=e567]:
+                                - text: The unique ID of the object to fetch from the collection. This value is provided as a path parameter, replacing
+                                - strong [ref=e568]: "{id}"
+                                - text: in the endpoint URL.
+                          - separator [ref=e569]
+                          - heading "Request url example" [level=6] [ref=e570]
+                          - paragraph [ref=e571]: https://api.restful-api.dev/objects/7
+                          - separator [ref=e572]
+                          - heading "Response body example" [level=6] [ref=e573]
+                          - code [ref=e577]:
+                            - generic [ref=e578]: "1"
+                            - text: "{"
+                            - generic [ref=e579]: "2"
+                            - text: "\"id\": \"7\","
+                            - generic [ref=e580]: "3"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e581]: "4"
+                            - text: "\"data\": {"
+                            - generic [ref=e582]: "5"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e583]: "6"
+                            - text: "\"price\": 1849.99,"
+                            - generic [ref=e584]: "7"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e585]: "8"
+                            - text: "\"Hard disk size\": \"1 TB\""
+                            - generic [ref=e586]: "9"
+                            - text: "}"
+                            - generic [ref=e587]: "10"
+                            - text: "}"
+                  - listitem [ref=e171]:
+                    - generic [ref=e172]:
+                      - heading [level=3] [ref=e410]:
+                        - button "POST https://api.restful-api.dev/objects Add a new object" [expanded] [ref=e411] [cursor=pointer]:
+                          - generic [ref=e176]:
+                            - generic [ref=e177]:
+                              - generic [ref=e178]: POST
+                              - paragraph [ref=e180]: https://api.restful-api.dev/objects
+                            - paragraph [ref=e181]: Add a new object
+                      - region [ref=e593]:
+                        - generic [ref=e594]:
+                          - heading "Description" [level=6] [ref=e595]
+                          - paragraph [ref=e596]:
+                            - paragraph [ref=e597]:
+                              - text: Creates and stores a new object using the data provided in the request body. The request body includes a name property and a data field.
+                              - strong [ref=e598]: The data field accepts any valid JSON structure
+                              - text: "- objects, arrays, or key-value pairs - allowing flexible and custom data formats."
+                          - separator [ref=e599]
+                          - heading "Headers" [level=6] [ref=e600]
+                          - generic [ref=e602]:
+                            - paragraph [ref=e603]:
+                              - text: •
+                              - strong [ref=e604]: Content-Type
+                            - generic [ref=e605]: application/json
+                            - generic [ref=e606]: required
+                          - separator [ref=e607]
+                          - heading "Request body example" [level=6] [ref=e608]
+                          - generic [ref=e610]:
+                            - button [ref=e611] [cursor=pointer]
+                            - code [ref=e615]:
+                              - generic [ref=e616]: "1"
+                              - text: "{"
+                              - generic [ref=e617]: "2"
+                              - text: "\"name\": \"Apple MacBook Pro 16\","
+                              - generic [ref=e618]: "3"
+                              - text: "\"data\": {"
+                              - generic [ref=e619]: "4"
+                              - text: "\"year\": 2019,"
+                              - generic [ref=e620]: "5"
+                              - text: "\"price\": 1849.99,"
+                              - generic [ref=e621]: "6"
+                              - text: "\"CPU model\": \"Intel Core i9\","
+                              - generic [ref=e622]: "7"
+                              - text: "\"Hard disk size\": \"1 TB\""
+                              - generic [ref=e623]: "8"
+                              - text: "}"
+                              - generic [ref=e624]: "9"
+                              - text: "}"
+                          - separator [ref=e625]
+                          - heading "Response body example" [level=6] [ref=e626]
+                          - code [ref=e630]:
+                            - generic [ref=e631]: "1"
+                            - text: "{"
+                            - generic [ref=e632]: "2"
+                            - text: "\"id\": \"7\","
+                            - generic [ref=e633]: "3"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e634]: "4"
+                            - text: "\"data\": {"
+                            - generic [ref=e635]: "5"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e636]: "6"
+                            - text: "\"price\": 1849.99,"
+                            - generic [ref=e637]: "7"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e638]: "8"
+                            - text: "\"Hard disk size\": \"1 TB\""
+                            - generic [ref=e639]: "9"
+                            - text: "},"
+                            - generic [ref=e640]: "10"
+                            - text: "\"createdAt\": \"2022-11-21T20:06:23.986Z\""
+                            - generic [ref=e641]: "11"
+                            - text: "}"
+                  - listitem [ref=e185]:
+                    - generic [ref=e186]:
+                      - heading [level=3] [ref=e412]:
+                        - 'button "PUT https://api.restful-api.dev/objects/{id} Update an object" [expanded] [active] [ref=e413] [cursor=pointer]':
+                          - generic [ref=e190]:
+                            - generic [ref=e191]:
+                              - generic [ref=e192]: PUT
+                              - paragraph [ref=e194]: "https://api.restful-api.dev/objects/{id}"
+                            - paragraph [ref=e195]: Update an object
+                      - region [ref=e647]:
+                        - generic [ref=e648]:
+                          - heading "Description" [level=6] [ref=e649]
+                          - paragraph [ref=e650]:
+                            - paragraph [ref=e651]: Completely replaces the data of an existing object identified by its ID with new information.
+                          - separator [ref=e652]
+                          - heading "Headers" [level=6] [ref=e653]
+                          - generic [ref=e655]:
+                            - paragraph [ref=e656]:
+                              - text: •
+                              - strong [ref=e657]: Content-Type
+                            - generic [ref=e658]: application/json
+                            - generic [ref=e659]: required
+                          - separator [ref=e660]
+                          - heading "Parameters" [level=6] [ref=e661]
+                          - generic [ref=e663]:
+                            - paragraph [ref=e664]:
+                              - text: •
+                              - strong [ref=e665]: id
+                              - text: string pathrequired
+                            - paragraph [ref=e666]:
+                              - paragraph [ref=e667]:
+                                - text: The ID of the object to update entirely with new data. This value is provided as a path parameter, replacing
+                                - strong [ref=e668]: "{id}"
+                                - text: in the endpoint URL.
+                          - separator [ref=e669]
+                          - heading "Request url example" [level=6] [ref=e670]
+                          - paragraph [ref=e671]: https://api.restful-api.dev/objects/7
+                          - separator [ref=e672]
+                          - heading "Request body example" [level=6] [ref=e673]
+                          - generic [ref=e675]:
+                            - button [ref=e676] [cursor=pointer]
+                            - code [ref=e680]:
+                              - generic [ref=e681]: "1"
+                              - text: "{"
+                              - generic [ref=e682]: "2"
+                              - text: "\"name\": \"Apple MacBook Pro 16\","
+                              - generic [ref=e683]: "3"
+                              - text: "\"data\": {"
+                              - generic [ref=e684]: "4"
+                              - text: "\"year\": 2019,"
+                              - generic [ref=e685]: "5"
+                              - text: "\"price\": 2049.99,"
+                              - generic [ref=e686]: "6"
+                              - text: "\"CPU model\": \"Intel Core i9\","
+                              - generic [ref=e687]: "7"
+                              - text: "\"Hard disk size\": \"1 TB\","
+                              - generic [ref=e688]: "8"
+                              - text: "\"color\": \"silver\""
+                              - generic [ref=e689]: "9"
+                              - text: "}"
+                              - generic [ref=e690]: "10"
+                              - text: "}"
+                          - separator [ref=e691]
+                          - heading "Response body example" [level=6] [ref=e692]
+                          - code [ref=e696]:
+                            - generic [ref=e697]: "1"
+                            - text: "{"
+                            - generic [ref=e698]: "2"
+                            - text: "\"id\": \"7\","
+                            - generic [ref=e699]: "3"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e700]: "4"
+                            - text: "\"data\": {"
+                            - generic [ref=e701]: "5"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e702]: "6"
+                            - text: "\"price\": 2049.99,"
+                            - generic [ref=e703]: "7"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e704]: "8"
+                            - text: "\"Hard disk size\": \"1 TB\","
+                            - generic [ref=e705]: "9"
+                            - text: "\"color\": \"silver\""
+                            - generic [ref=e706]: "10"
+                            - text: "},"
+                            - generic [ref=e707]: "11"
+                            - text: "\"updatedAt\": \"2022-12-25T21:08:41.986Z\""
+                            - generic [ref=e708]: "12"
+                            - text: "}"
+                  - listitem [ref=e199]:
+                    - heading [level=3] [ref=e414]:
+                      - 'button "PATCH https://api.restful-api.dev/objects/{id} Partially update an object" [ref=e415] [cursor=pointer]':
+                        - generic [ref=e204]:
+                          - generic [ref=e205]:
+                            - generic [ref=e206]: PATCH
+                            - paragraph [ref=e208]: "https://api.restful-api.dev/objects/{id}"
+                          - paragraph [ref=e209]: Partially update an object
+                  - listitem [ref=e213]:
+                    - heading [level=3] [ref=e416]:
+                      - 'button "DELETE https://api.restful-api.dev/objects/{id} Delete an object" [ref=e417] [cursor=pointer]':
+                        - generic [ref=e218]:
+                          - generic [ref=e219]:
+                            - generic [ref=e220]: DELETE
+                            - paragraph [ref=e222]: "https://api.restful-api.dev/objects/{id}"
+                          - paragraph [ref=e223]: Delete an object
+              - button [ref=e270] [cursor=pointer]
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - heading "How to Use It" [level=2] [ref=e278]
+                - paragraph [ref=e279]: Get started with our REST API in your favorite programming language. Choose from the examples below.
+              - generic [ref=e280]:
+                - tablist [ref=e285]:
+                  - tab "JavaScript" [selected] [ref=e286] [cursor=pointer]
+                  - tab "Java" [ref=e287] [cursor=pointer]
+                  - tab "Python" [ref=e288] [cursor=pointer]
+                - generic [ref=e290]:
+                  - button [ref=e291] [cursor=pointer]
+                  - code [ref=e295]:
+                    - generic [ref=e296]: "1"
+                    - text: // Using Fetch API
+                    - generic [ref=e297]: "2"
+                    - text: fetch('https://api.restful-api.dev/objects')
+                    - generic [ref=e298]: "3"
+                    - text: .then(response => response.json())
+                    - generic [ref=e299]: "4"
+                    - text: .then(data => console.log('GET Response:', data))
+                    - generic [ref=e300]: "5"
+                    - text: .catch(error => console.error('Error:', error));
+                    - generic [ref=e301]: "6"
+                    - generic [ref=e302]: "7"
+                    - text: // POST request
+                    - generic [ref=e303]: "8"
+                    - text: "fetch('https://api.restful-api.dev/objects', {"
+                    - generic [ref=e304]: "9"
+                    - text: "method: 'POST',"
+                    - generic [ref=e305]: "10"
+                    - text: "headers: {"
+                    - generic [ref=e306]: "11"
+                    - text: "'Content-Type': 'application/json',"
+                    - generic [ref=e307]: "12"
+                    - text: "},"
+                    - generic [ref=e308]: "13"
+                    - text: "body: JSON.stringify({"
+                    - generic [ref=e309]: "14"
+                    - text: "name: 'Apple MacBook Pro 16',"
+                    - generic [ref=e310]: "15"
+                    - text: "data: {"
+                    - generic [ref=e311]: "16"
+                    - text: "year: 2019,"
+                    - generic [ref=e312]: "17"
+                    - text: "price: 1849.99,"
+                    - generic [ref=e313]: "18"
+                    - text: "'CPU model': 'Intel Core i9',"
+                    - generic [ref=e314]: "19"
+                    - text: "'Hard disk size': '1 TB'"
+                    - generic [ref=e315]: "20"
+                    - text: "}"
+                    - generic [ref=e316]: "21"
+                    - text: "})"
+                    - generic [ref=e317]: "22"
+                    - text: "})"
+                    - generic [ref=e318]: "23"
+                    - text: .then(response => response.json())
+                    - generic [ref=e319]: "24"
+                    - text: .then(data => console.log('POST Response:', data));
+            - generic [ref=e321]:
+              - generic [ref=e322]:
+                - heading "Frequently Asked Questions" [level=2] [ref=e323]
+                - paragraph [ref=e324]: Find answers to common questions about our REST API service.
+              - generic [ref=e325]:
+                - heading [level=3] [ref=e327]:
+                  - button [ref=e328] [cursor=pointer]:
+                    - paragraph [ref=e330]: What is the difference between public and authenticated endpoints?
+                - heading [level=3] [ref=e335]:
+                  - button [ref=e336] [cursor=pointer]:
+                    - paragraph [ref=e338]: Can I modify or delete data?
+                - heading [level=3] [ref=e343]:
+                  - button [ref=e344] [cursor=pointer]:
+                    - paragraph [ref=e346]: Does the API support CORS?
+                - heading [level=3] [ref=e351]:
+                  - button [ref=e352] [cursor=pointer]:
+                    - paragraph [ref=e354]: Is this API free to use?
+                - heading [level=3] [ref=e359]:
+                  - button [ref=e360] [cursor=pointer]:
+                    - paragraph [ref=e362]: What HTTP methods are supported?
+                - heading [level=3] [ref=e367]:
+                  - button [ref=e368] [cursor=pointer]:
+                    - paragraph [ref=e370]: Can I override the response status code?
+                - heading [level=3] [ref=e375]:
+                  - button [ref=e376] [cursor=pointer]:
+                    - paragraph [ref=e378]: Can I suggest new features or endpoints?
+              - generic [ref=e382]:
+                - heading "Still have questions?" [level=6] [ref=e383]
+                - paragraph [ref=e384]: Can't find the answer you're looking for? Feel free to reach out.
+                - link "Contact Us →" [ref=e385] [cursor=pointer]:
+                  - /url: /contact
+      - row [ref=e386]:
+        - 'cell "Home About Contact Privacy Policy DigitalOcean Referral Badge © 2026 Copyright: restful-api.dev" [ref=e387]':
+          - contentinfo [ref=e389]:
+            - generic [ref=e390]:
+              - list [ref=e391]:
+                - listitem [ref=e392]:
+                  - link "Home" [ref=e393] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e394]:
+                  - link "About" [ref=e395] [cursor=pointer]:
+                    - /url: /about
+                - listitem [ref=e396]:
+                  - link "Contact" [ref=e397] [cursor=pointer]:
+                    - /url: /contact
+                - listitem [ref=e398]:
+                  - link "Privacy Policy" [ref=e399] [cursor=pointer]:
+                    - /url: /privacy-policy
+              - link [ref=e401] [cursor=pointer]:
+                - /url: https://www.digitalocean.com/?refcode=4ad9734878c9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge
+                - img "DigitalOcean Referral Badge" [ref=e402]
+            - generic [ref=e403]: "© 2026 Copyright: restful-api.dev"
